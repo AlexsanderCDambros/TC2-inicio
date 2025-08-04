@@ -19,7 +19,7 @@ module.exports = (webpackConfigEnv, argv) => {
       new webpack.DefinePlugin({
         "process.env.API_BASE_URL": JSON.stringify(
           isProduction
-            ? "https://sua-api-prod.com"
+            ? "https://tc2-copia-api-production.up.railway.app"
             : "http://localhost:3000"
         ),
       }),
